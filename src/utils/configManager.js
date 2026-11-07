@@ -1,9 +1,7 @@
-// مدير الإعدادات - القلب النابض للتطبيق
 import { appSettings } from '../config/settings'
 
 export class ConfigManager {
   static updateSettings(newSettings) {
-    // دمج الإعدادات الجديدة مع القديمة
     Object.assign(appSettings, newSettings)
     this.saveToLocalStorage()
   }
